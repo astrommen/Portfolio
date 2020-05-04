@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <title>Aja'sPortfolio-Home</title>
-    <link rel="stylesheet" href="./assets/css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
     <meta name="viewport" >
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
   </head>
   
   <body>
@@ -49,57 +51,76 @@
           </div> 
           <!-- End of flex container -->
           <div class="viewport right card">
-            <div class="gallery horizontal-object">
-              container for the photos
-              <div class="photos">
-                <a href="https://astrommen.github.io/Word-Guess-Game/">
-                    <img class="pic" src="./assets/images/abdul-rafay-shaikh-wvrS_N_o4nE-unsplash.jpg" alt="picture of woods and rocks">
-                    <div class="text">Hangman</div>
-                </a>
+            <div class="gallery horizontal-object splide">
+              <div class="splide__track">
+                <div class="splide__list"> 
+                  <div class="photos splide__slide">
+                    <a href="https://github.com/astrommen/burger">
+                        <img class="pic" src="./assets/images/flying-burger.jpg" alt="picture of a burger">
+                        <div class="text">Burger App</div>
+                    </a>
+                  </div>         
+                  <div class="photos splide__slide">
+                    <a href="https://github.com/astrommen/bamzon">
+                        <img class="pic" src="./assets/images/storefront.jpeg" alt="picture inside of a store">
+                        <div class="text">Bamzon</div>
+                    </a>
+                  </div>
+                  <div class="photos splide__slide">
+                    <a href="https://github.com/astrommen/liri-node-app">
+                        <img class="pic" src="./assets/images/bot.png" alt="picture of a bot">
+                        <div class="text">Liri Bot</div>
+                    </a>
+                  </div> 
+                  <div class="photos splide__slide">
+                    <a href="https://astrommen.github.io/Group_Project-1/">
+                        <img class="pic" src="./assets/images/couple.png" alt="picture of a couple having dinner">
+                        <div class="text">Kicking in the Kitchen</div>
+                    </a>
+                  </div> 
+                  <div class="photos splide__slide">
+                    <a href="https://astrommen.github.io/Train-Scheduler/">
+                        <img class="pic" src="./assets/images/zoltan-tasi-QxjEi8Fs9Hg-unsplash.jpg" alt="picture of boulder in field">
+                        <div class="text">Rock Paper Scissors</div>
+                    </a>
+                  </div> 
+                  <div class="photos splide__slide">
+                    <a href="https://astrommen.github.io/GiphyApp/">
+                        <img class="pic" src="./assets/images/william-iven-SpVHcbuKi6E-unsplash.jpg" alt="picture of woman holding a phone">
+                        <div class="text">Giphy App</div>
+                    </a>
+                  </div>
+                  <div class="photos splide__slide">
+                    <a href="https://astrommen.github.io/TriviaGame/">
+                        <img class="pic" src="./assets/images/kinson-leung-ctG084PsBs8-unsplash.jpg" alt="picture of timelapsed ferris wheel">
+                        <div class="text">Trivia Game</div>
+                    </a>
+                  </div>
+                  <div class="photos splide__slide">
+                    <a href="https://astrommen.github.io/Word-Guess-Game/">
+                      <img class="pic" src="./assets/images/abdul-rafay-shaikh-wvrS_N_o4nE-unsplash.jpg" alt="picture of woods and rocks">
+                        <div class="text">Hangman</div>
+                    </a>
+                  </div> <!--end of container for the photos-->
+                </div>
+                
+                <!-- <div id="#secondary-slider" class="splide">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">
+                        <img src="thumbnail01.jpg">
+                      </li>
+                      <li class="splide__slide">
+                        <img src="thumbnail02.jpg">
+                      </li>
+                      <li class="splide__slide">
+                        <img src="thumbnail03.jpg">
+                      </li>
+                    </ul>
+                  </div>
+                </div> -->
               </div>
-              <div class="photos">
-                  <a href="https://astrommen.github.io/unit-4-game/">
-                      <img class="pic" src="./assets/images/fitsum-admasu-oGv9xIl7DkY-unsplash.jpg" alt="picture of girls running">
-                      <div class="text">Crystal Game</div>
-                  </a>
-              </div>
-              <div class="photos">
-                  <a href="https://astrommen.github.io/TriviaGame/">
-                      <img class="pic" src="./assets/images/kinson-leung-ctG084PsBs8-unsplash.jpg" alt="picture of timelapsed ferris wheel">
-                      <div class="text">Trivia Game</div>
-                  </a>
-              </div>
-              <div class="photos">
-                  <a href="https://astrommen.github.io/GiphyApp/">
-                      <img class="pic" src="./assets/images/william-iven-SpVHcbuKi6E-unsplash.jpg" alt="picture of woman holding a phone">
-                      <div class="text">Giphy App</div>
-                  </a>
-              </div>
-              <div class="photos">
-                  <a href="https://astrommen.github.io/Train-Scheduler/">
-                      <img class="pic" src="./assets/images/zoltan-tasi-QxjEi8Fs9Hg-unsplash.jpg" alt="picture of boulder in field">
-                      <div class="text">Rock Paper Scissors</div>
-                  </a>
-              </div> 
-              <div class="photos">
-                  <a href="https://astrommen.github.io/Group_Project-1/">
-                      <img class="pic" src="./assets/images/couple.png" alt="picture of a couple having dinner">
-                      <div class="text">Kicking in the Kitchen</div>
-                  </a>
-              </div> 
-              <div class="photos">
-                  <a href="https://github.com/astrommen/liri-node-app">
-                      <img class="pic" src="./assets/images/bot.png" alt="picture of a bot">
-                      <div class="text">Liri Bot</div>
-                  </a>
-              </div> 
-              <div class="photos">
-                  <a href="https://github.com/astrommen/bamzon">
-                      <img class="pic" src="./assets/images/storefront.jpeg" alt="picture inside of a store">
-                      <div class="text">Bamzon</div>
-                  </a>
-              </div> end of container for the photos
-              kjhlkh
+              
             </div>
             
           </div>

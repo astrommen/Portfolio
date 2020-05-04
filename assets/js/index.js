@@ -32,3 +32,45 @@ function checkPosition() {
 
 // window.addEventListener('scroll', checkPosition);
 window.addEventListener('scroll', debounce(checkPosition));
+
+// Splider Code
+
+new Splide( '#splide', {
+  perPage: 3,
+  perMove: 3,
+  fixedWidth : 100,
+	height: 60,
+  cover: true,
+} ).mount();
+
+document.addEventListener( 'DOMContentLoaded', function () {
+  new Splide( '.splide' ).mount();
+} );
+
+var elms = $( '.splide' );
+for ( var i = 0, len = elms.length; i < len; i++ ) {
+	new Splide( elms[ i ] ).mount();
+}
+
+// document.addEventListener( 'DOMContentLoaded', function () {
+// 	new Splide( '#secondary-slider', {
+// 		fixedWidth : 100,
+// 		height     : 60,
+// 		gap        : 10,
+// 		rewind     : true,
+//     cover      : true,
+//     isNavigation: true,
+//     pagination : false,
+//     focus      : 'center',
+//     breakpoints : {
+//       '600': {
+//         fixedWidth: 66,
+//         height    : 40,
+//       }
+//     }
+// 	}).mount();
+// } );
+
+// var secondarySlider = new Splide( '#secondary-slider' ).mount();
+// var primarySlider = new Splide( '#primary-slider' );
+// primaryslider.sync( secondarySlider ).mount();

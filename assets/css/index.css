@@ -42,10 +42,11 @@ body {
 }
 
 .viewport {
-  margin-bottom: 50px;
-	height: 800px;
+  margin-bottom: .5px;
+	height: 650px;
 /* position:relative; */
   overflow: auto;
+  position: sticky;
 }
 
 .right{
@@ -54,7 +55,8 @@ body {
   /* z-index: -1; */
   /* position: relative; */
   /* display: hidden; */
-  background-color: #866730;
+  background-color: #6B4917;
+  padding: 5% 0;
   
 }
 
@@ -90,10 +92,14 @@ a{
 
 .gallery{
   width:90%;
-  /* height: 100vh; */
+  height: 100%;
   background-color: #E2D6B8;
   /* overflow: hidden; */
-  /* margin: 0 auto; */
+  margin: auto;
+}
+
+.splide {
+  visibility: visible;
 }
 
 .pic {
