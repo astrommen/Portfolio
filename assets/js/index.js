@@ -13,7 +13,7 @@ function debounce(func, wait = 5, immediate = true) {
   };
 };
 
-let scrollPos = 0;
+let scrollPos = 10;
 const nav = $('.flex-container');
 
 function checkPosition() {
@@ -27,7 +27,7 @@ function checkPosition() {
     nav.addClass('is-hidden');
     nav.removeClass('is-visible');
   }
-  scrollPos = windowY;
+  // scrollPos = windowY;
 }
 
 // window.addEventListener('scroll', checkPosition);
