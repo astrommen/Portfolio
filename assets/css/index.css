@@ -119,8 +119,6 @@ a{
   margin: 0;
 }
 
-
-
 /* Pop */
 .hvr-grow {
   display: inline-block;
@@ -133,10 +131,51 @@ a{
   -webkit-transition-property: transform;
   transition-property: transform;
 }
+
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
 }
+
+/* Project Card Styling */
+.projectTitle {
+  font-size: 1.5rem;
+  margin-bottom: .75rem;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  position: relative;
+}
+
+button:before {
+  transition: all 0.8s cubic-bezier(0.7, -0.5, 0.2, 2);
+  content: '';
+  width: 1%;
+  height: 100%;
+  background: #a06e2479;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+button span {
+  mix-blend-mode: darken;
+}
+
+button:hover:before {
+  background: #a06e24;
+  color: white;
+  width: 100%;
+}
+
+
 
 /* Contact Card */
 .contact{
@@ -148,8 +187,11 @@ a{
   padding: 30% 5%;
 }
 
-a:link{
+a {
   text-decoration: none;
+  background-color: transparent;
+  color: #5c3f14fb;
+
 }
 
 .contact-card{
