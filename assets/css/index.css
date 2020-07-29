@@ -27,7 +27,8 @@ body {
   flex-direction: column;
   justify-content: space between;
   margin: 5% 1%;
-  border: solid black 2px;
+  border: solid #6B4917 .5px;
+  border-radius: 3%;
   width: 33.33%;
   height: 77vh;
 }
@@ -38,6 +39,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 3% 3% 0 0;
 }
 
 .card-text {
@@ -80,9 +82,9 @@ body {
   margin-bottom: .5px;
 	height: 900px;
   overflow: auto;
-  width: 96%;    
+  width: 98%;    
   background-color: #E2D6B8;
-  padding: 5% 2%;
+  padding: 5% 1%;
 }
 
 /* Top card styling */
