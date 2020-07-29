@@ -25,10 +25,11 @@ body {
   justify-content: left;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: space between;
   margin: 5% 1%;
   border: solid black 2px;
   width: 33.33%;
+  height: 77vh;
 }
 
 .card-image-top{
@@ -37,6 +38,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.card-text {
+  padding: 0 0 0 3.3%;
 }
 /* Horizontal Scrolling */
 
@@ -162,7 +167,7 @@ a{
 .projectTitle {
   width: 100%;
   font-size: 1.5rem;
-  margin-bottom: .75rem;
+  margin: .75rem 0;
 }
 
 button {
