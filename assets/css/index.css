@@ -26,11 +26,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space between;
-  margin: 5% 1%;
+  margin: 2% 1%;
   border: solid #6B4917 .5px;
   border-radius: 3%;
   width: 33.33%;
-  height: 77vh;
+  height: 38vh;
 }
 
 .card-image-top{
@@ -43,7 +43,7 @@ body {
 }
 
 .card-text {
-  padding: 0 0 0 3.3%;
+  padding: 0 2.5% 0 4.5%;
 }
 /* Horizontal Scrolling */
 
@@ -169,7 +169,7 @@ a{
 .projectTitle {
   width: 100%;
   font-size: 1.5rem;
-  margin: .75rem 0;
+  margin: 1.25rem .25rem .75rem;
 }
 
 button {
@@ -181,6 +181,7 @@ button {
   font-size: 18px;
   padding: 10px;
   position: relative;
+  margin-left: 1.7%;
 }
 
 button:before {
@@ -219,7 +220,7 @@ button:hover:before {
 a {
   text-decoration: none;
   background-color: transparent;
-  color: #5c3f14fb;
+  color: #472800;
 
 }
 
