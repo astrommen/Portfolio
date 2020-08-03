@@ -130,7 +130,7 @@ a{
   flex-direction: column;
 }
 
-.row {
+.row, .row2 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -229,7 +229,7 @@ a {
 
 .contact-card{
   background-color: #E2D6B8;
-  height: 40vh;
+  height: max-content;
   /* width: 90% */
 }
 
@@ -240,6 +240,11 @@ a {
 .contact-info > .row {
   margin: 3%;
   /* width:30%; */
+}
+
+.row2 {
+  width:45%;
+  margin: 3% auto;
 }
 
 @media screen and (max-width: 992px) {
