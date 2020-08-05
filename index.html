@@ -1,139 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport">
     <title>Aja'sPortfolio-Home</title>
+
+    <!-- Google Fonts Stylesheet -->
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
+    <!-- Interna; Stylesheet -->
     <link rel="stylesheet" href="./assets/css/index.css">
-    <meta name="viewport" >
+
+    <!-- Jquery CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
   </head>
   
   <body>
 
-        <!--Header at top of page-->
-        <!-- <div class="scrolling-wrapper-flexbox container"> -->
-          <div class="flex-container left card">
+    <!-- Landing Page -->
+    <div class="flex-container left card">
+      <img src="./assets/images/Drawing.png" id="logo" alt="Aja's logo" id="portrait">
 
-            <!-- <div class="header">  -->
-                <img src="./assets/images/Drawing.png" id="logo" alt="Aja's logo" id="portrait">
-            <!-- </div> -->
+      <div class="main"> 
+        <!--bio of me-->
+        Hi! I'm a web developer based in Philadelphia. <br>
+        I love taking a journey into the rabbit hole <br>
+        and making order out of chaos. <br>
+        Scroll down to see some of my work below.
+      </div>
 
-            <div class="main"> 
-                <!--bio of me, including pic-->
-                Hi! I'm a web developer based in Philadelphia. <br>
-                I love taking a journey into the rabbit hole <br>
-                and making order out of chaos. <br>
-                Scroll down to see some of my work below.
+      <div class="links">
+        <a href="https://www.linkedin.com/in/aja-strommen-66a937187/" class="hvr-grow">
+          <img src="./assets/images/linkedin.png" alt="LinkedIn logo">
+        </a>
+        <a href="https://github.com/astrommen" class="hvr-grow">
+          <img src="./assets/images/github.png" alt="Github logo">
+        </a>
+        <a href="https://codepen.io/astrommen" class="hvr-grow">
+          <img src="./assets/images/codepen.png" alt="Codepen logo">
+        </a>
+        <!-- <a href="portfolio-copy.html" class="hvr-grow">
+          <img src="./assets/images/portfolio.png" alt="Portfolio Icon">
+        </a> -->
+        <a href="#" class="hvr-grow" id="contactMe" onclick="contactScroll()">
+          <img src="./assets/images/contactus.png" alt="Contact Icon">
+        </a>
+      </div> 
+      
+    </div> 
+    <!-- End of Landing Page -->
+          
+    <div class="viewport right card">
+
+      <!-- Portfolio Page -->
+      <section class="gallery horizontal-object flex">
+
+        <div class="title">Projects</div>
+          
+        <div class="row">
+          
+          <div class="col-lg-4 col-md-4 col-sm-6 portfolio-item">            
+            <div class="card-image-top" style="background-image: url('./assets/images/Sci-Fi-Dine-In.jpg');">
+              <a href="https://astrommen.github.io/Group_Project-1/"></a>
+            </div> 
+
+            <div class="projectTitle">
+              <a href="https://astrommen.github.io/Group_Project-1/">
+                Date Night In
+              </a>
             </div>
 
-            <div class="links">
-              <a href="https://www.linkedin.com/in/aja-strommen-66a937187/" class="hvr-grow">
-                <img src="./assets/images/linkedin.png" alt="LinkedIn logo">
-              </a>
-              <a href="https://github.com/astrommen" class="hvr-grow">
-                <img src="./assets/images/github.png" alt="Github logo">
-              </a>
-              <a href="https://codepen.io/astrommen" class="hvr-grow">
-                <img src="./assets/images/codepen.png" alt="Codepen logo">
-              </a>
-              <a href="portfolio-copy.html" class="hvr-grow">
-                <img src="./assets/images/portfolio.png" alt="Portfolio Icon">
-              </a>
-              <a href="contact.html" class="hvr-grow">
-                <img src="./assets/images/contactus.png" alt="Contact Icon">
-              </a>
-              <!-- Copyright@2019 -->
-            </div>
-            
-          </div> 
-          <!-- End of flex container -->
-          <section class="viewport right card">
+            <a href="https://github.com/astrommen/Group_Project-1">
+              <button class="githubLink">
+                <span>
+                  GITHUB 
+                </span> 
+              </button>
+            </a>
 
-            <div class="gallery horizontal-object splide">
-
-              <div class="title">Projects</div>
-              
-                  <div class="photos splide__slide">
-                    <a href="https://astrommen.github.io/Group_Project-1/">
-                        <img class="pic" src="./assets/images/Sci-Fi-Dine-In.jpg" alt="picture of a couple having dinner">
-
-                        <div class="projectTitle">
-                          <a href="https://astrommen.github.io/Group_Project-1/">
-                            Date Night In
-                          </a>
-                        </div>
-
-                        <a href="https://github.com/astrommen/Group_Project-1">
-                          <button class="githubLink">
-                            <span>
-                              GITHUB 
-                            </span> 
-                          </button>
-                        </a>
-                    </a>
-                  </div> 
+            <p class="card-text"> 
+              An application that pairs movie and dinner suggestions with your mood. 
+            </p>
+          </div>
                   
-                  <div class="photos splide__slide">
-                    <a href="https://github.com/hgowton/LittleLeagueLogger">
-                      <img class="pic" src="./assets/images/LittleLeagueLogger.png" alt="Little League Logger Logo">
-
-                      <div class="projectTitle"> 
-                        <a href="https://rocky-sea-86685.herokuapp.com/">
-                          Little League Logger
-                        </a> 
-                      </div>
-
-                      <a href="https://github.com/hgowton/LittleLeagueLogger">
-                        <button class="githubLink">
-                          <span>
-                            GITHUB 
-                          </span> 
-                        </button>
-                      </a>
-                    </a>
-                  </div> 
-
-                  <div class="photos splide__slide">
-                    <a href="https://github.com/astrommen/WhereTo">
-                      <img class="pic" src="./assets/images/WhereToLogo.png" alt="WhereTo Logo">
-                      
-                      <div class="projectTitle">
-                        <a href="https://where-to-planner.herokuapp.com">
-                          WhereTo
-                        </a>  
-                      </div>
-                      <a href="https://github.com/astrommen/WhereTo">
-                        <button class="githubLink">
-                          <span>
-                            GITHUB 
-                          </span> 
-                        </button>
-                      </a>
-                    </a>
-                  </div>
-    
+          <div class="col-lg-4 col-md-4 col-sm-6 portfolio-item">
+            <div class="card-image-top" style="background-image: url('./assets/images/ben-hershey-53TmDnb-jtM-unsplash.jpg');">
+              <a href="https://rocky-sea-86685.herokuapp.com/"></a>
             </div>
-            
-            <!-- </div> -->
-          </section>
+                        
+            <div class="projectTitle"> 
+              <a href="https://rocky-sea-86685.herokuapp.com/">
+                Little League Logger
+              </a> 
+            </div>
+  
+            <a href="https://github.com/hgowton/LittleLeagueLogger">
+              <button class="githubLink">
+                <span>
+                  GITHUB 
+                </span> 
+              </button>
+            </a>
+                        
+            <p class="card-text"> 
+              Full stack MERN app for league teams to record game scores in real-time and broadcast to their supporters. 
+            </p>
+          </div> 
+                    
+          <div class="col-lg-4 col-md-4 col-sm-6 portfolio-item">
+            <div class="card-image-top" style="background-image: url('./assets/images/nicole-geri-eUyNYtwN0tA-unsplash.jpg');">
+              <a href="https://where-to-planner.herokuapp.com"></a>
+            </div>
+                        
+            <div class="projectTitle">
+              <a href="https://where-to-planner.herokuapp.com">
+                WhereTo
+              </a>  
+            </div>
+                          
+            <a href="https://github.com/astrommen/WhereTo">
+              <button class="githubLink">
+                <span>
+                  GITHUB 
+                </span> 
+              </button>
+            </a>
+                          
+            <p class="card-text"> 
+              Full stack MERN application to plan and personalize your next day trip or vacation. 
+            </p>
+          </div>
+                          
+        </div>
 
-        <!-- Contact Me "Page" -->
-        <section class="container contact">
-          <div class="contact-card">
-            <p>
-              <a href="mailto:aja.strommen@gmail.com">Click to email me at aja.strommen@gmail.com</a>
-            </p>
-            <p>
-              <a href="telto:01-215-514-4806">Click to call me at 215-514-4806</a>
-            </p>
+      </section>
+
+      <!-- Resume "Page" -->
+      <section class="container resume">
+
+        <div class="title"> View My Resume! </div>
+
+        <button id="myResume">
+          <a href="./assets/docs/Aja.Strommen Resume Bootcamp.pdf">
+            Resume
+          </a>
+        </button>
+      </section>
+
+      <!-- Contact Me "Page" -->
+      <section class="container contact contact-card">
+        <!-- <div class="row"> -->
+          <div class="title"> Let's Get In Touch! </div>
+        <!-- </div> -->
+          <div class="row row2">
+
+            <div class="col-lg-6 col-md-4 col-sm-6 contact-info">
+              <div class="row">
+                <a href="mailto:aja.strommen@gmail.com">
+                  <img src="./assets/images/emailIcon.png" alt="email icon" />
+                </a>
+              </div>
+              <div class="row">
+                <a href="mailto:aja.strommen@gmail.com">
+                  aja.strommen@gmail.com
+                </a>
+              </div>
+            </div>
+              
+            <div class="col-lg-6 col-md-4 col-sm-6 contact-info">
+              <div class="row">
+                <a href="telto:01-267-225-7496">
+                  <img src="./assets/images/phoneIcon.png" alt="phone icon" />
+                </a>
+              </div>
+              <div class="row">
+                <a href="telto:01-267-225-7496">
+                  (267)-225-7496
+                </a>
+              </div>
+            </div>
+
           </div>
           
         </section>
   
-    
+      </div>
 
     <script src="./assets/js/index.js"></script>
   </body>

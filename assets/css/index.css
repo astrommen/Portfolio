@@ -12,8 +12,8 @@ body {
   
 }
 
-.title{
-  padding-top: 2%;
+.title {
+  /* padding-top: 2%; */
   font-size: 300%;
   text-align: center;
   text-decoration: underline;
@@ -21,6 +21,30 @@ body {
   text-decoration-color: #6B4917;
 }
 
+.portfolio-item {
+  justify-content: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space between;
+  margin: 2% 1%;
+  border: solid #6B4917 .5px;
+  border-radius: 3%;
+  width: 33.33%;
+  height: 42vh;
+}
+
+.card-image-top{
+  width: 100%;
+  height: 43%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 3% 3% 0 0;
+}
+
+.card-text {
+  padding: 0 2.5% 0 4.5%;
+}
 /* Horizontal Scrolling */
 
 .left{
@@ -58,18 +82,9 @@ body {
   margin-bottom: .5px;
 	height: 900px;
   overflow: auto;
-  /* position: absolute; */
-/* } */
-
-/* .right{ */
-  width: 100%;    
-  /* margin: 5% 0 5% 5%; */
-  /* z-index: -1; */
-  /* position: relative; */
-  /* display: hidden; */
-  background-color: #6B4917;
-  padding: 5% 0;
-  
+  width: 98%;    
+  background-color: #E2D6B8;
+  padding: 5% 1%;
 }
 
 /* Top card styling */
@@ -103,11 +118,23 @@ a{
 /* Bottom Card Styling */
 
 .gallery{
-  width:90%;
-  height: 100%;
-  background-color: #E2D6B8;
+  width:100%;
+  /* background-color: #E2D6B8; */
   /* overflow: hidden; */
   margin: auto;
+}
+
+.flex{
+  display: flex;
+  grid-column-gap: 15px 0px;
+  flex-direction: column;
+}
+
+.row, .row2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .splide {
@@ -140,42 +167,77 @@ a{
 
 /* Project Card Styling */
 .projectTitle {
+  width: 100%;
   font-size: 1.5rem;
-  margin-bottom: .75rem;
+  margin: 1.25rem .25rem .75rem;
 }
 
-button {
+.githubLink {
   background: transparent;
   border: 0;
   border-radius: 0;
   text-transform: uppercase;
+  border-radius: 300px;
   font-weight: bold;
   font-size: 18px;
   padding: 10px;
   position: relative;
+  margin-left: 1.7%;
 }
 
-button:before {
+.githubLink:before {
   transition: all 0.8s cubic-bezier(0.7, -0.5, 0.2, 2);
   content: '';
   width: 1%;
   height: 100%;
   background: #a06e2479;
+  border-radius: 300px;
   position: absolute;
   top: 0;
   left: 0;
 }
 
-button span {
+.githubLink span {
   mix-blend-mode: darken;
+  border-radius: 300px;
 }
 
-button:hover:before {
+.githubLink:hover:before {
   background: #a06e24;
+  border-radius: 300px;
   color: white;
   width: 100%;
 }
 
+/* Resume Card */
+.resume{
+  margin: 2% 0 0 0;
+  padding: 5%;
+  background-color: #281B08;
+  height: max-content;
+  color: whitesmoke;
+  width: 90.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+#myResume {
+  margin: 2% auto;
+  padding: 1% 2%;
+  background-color: #a06e24;
+  color: whitesmoke;
+  border: none;
+  border-radius: 300px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#myResume a {
+  padding: 0;
+}
 
 
 /* Contact Card */
@@ -183,20 +245,43 @@ button:hover:before {
   text-align: center;
   text-decoration: none;
   /* height: 350px; */
-  background-color: #6B4917;
-  margin: -2.2% 0 0 0;
-  padding: 30% 5%;
+  /* background-color: #6B4917; */
+  /* margin: -2.2% 0 0 0; */
+  padding: 17% 5%;
+  background-color: #E2D6B8;
+  height: 40vh;
+  display: grid;
 }
 
 a {
   text-decoration: none;
   background-color: transparent;
-  color: #5c3f14fb;
+  color: #472800;
 
 }
 
 .contact-card{
   background-color: #E2D6B8;
-  height: 40vh;
+  height: max-content;
   /* width: 90% */
+}
+
+.contact-info {
+  width: 50%;
+}
+
+.contact-info > .row {
+  margin: 3%;
+  /* width:30%; */
+}
+
+.row2 {
+  width:45%;
+  margin: 3% auto;
+}
+
+@media screen and (max-width: 992px) {
+  .portfolio-item {
+    max-width: 33.33%;
+  }
 }
