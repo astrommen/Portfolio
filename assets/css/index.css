@@ -1,15 +1,8 @@
 body {
-  /* font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif; */
   font-family: 'Josefin Sans', sans-serif;
   color: #281B08;
-  /* background-image: url("../images/Paris_Philadelphia.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%; */
   box-sizing: border-box;
   margin: 0;
-  /* padding: 50px 20px; */
-  /* position: relative; */
-  
 }
 
 /* Parallax styling */
@@ -20,7 +13,7 @@ body {
 }
 
 #portrait{
-  width: 100%;
+  width: 105%;
 }
 
 .title {
@@ -68,21 +61,16 @@ body {
   justify-content: center;
   align-content: space-around;
   background-attachment: fixed;
+  background-position: center;
   width:100%;
+  position: relative;
 }
 
 .flex-container{
   height: 100vh;
   background-image: url("../images/Paris_Philadelphia.jpg");
   min-height: 100%;
-  /* margin: 0; */
-  position: relative;
-  /* opacity: 0.65; */
-  /* top: 0; */
-  /* left: 0; */
-  /* right: 0; */
-  /* z-index: 10; */
-  /* transition: transform 4.0s; */
+
 }
 
 /* .flex-container.is-hidden {
@@ -95,11 +83,11 @@ body {
 
 .viewport {
   margin-bottom: .5px;
-	height: 900px;
+	/* height: 900px; */
   overflow: auto;
-  width: 98%;    
+  width: 100%;    
   background-color: #E2D6B8;
-  padding: 5% 1%;
+  padding: 5% 0%;
 }
 
 /* Top card styling */
