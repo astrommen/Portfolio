@@ -12,6 +12,17 @@ body {
   
 }
 
+/* Parallax styling */
+.caption{
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+#portrait{
+  width: 100%;
+}
+
 .title {
   /* padding-top: 2%; */
   font-size: 300%;
@@ -51,32 +62,36 @@ body {
   background-image: url("../images/Paris_Philadelphia.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  position: fixed;
+  /* position: fixed; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: space-around;
+  background-attachment: fixed;
   width:100%;
 }
 
 .flex-container{
   height: 100vh;
-  margin: 0;
-  /* position: relative; */
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  transition: transform 4.0s;
+  background-image: url("../images/Paris_Philadelphia.jpg");
+  min-height: 100%;
+  /* margin: 0; */
+  position: relative;
+  /* opacity: 0.65; */
+  /* top: 0; */
+  /* left: 0; */
+  /* right: 0; */
+  /* z-index: 10; */
+  /* transition: transform 4.0s; */
 }
 
-.flex-container.is-hidden {
+/* .flex-container.is-hidden {
   transform: translateY(-400%);
 }
 
 .flex-container.is-visible {
   transform: translateY(0);
-}
+} */
 
 .viewport {
   margin-bottom: .5px;
@@ -280,6 +295,8 @@ a {
   margin: 3% auto;
 }
 
+
+/* Media Queries */
 @media screen and (max-width: 992px) {
   .portfolio-item {
     max-width: 33.33%;
