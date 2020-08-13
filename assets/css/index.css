@@ -35,11 +35,10 @@ section {
   justify-content: left;
   display: flex;
   flex-direction: column;
-  justify-content: space between;
   margin: 2% 1% 0;
   border: solid #6B4917 .5px;
   border-radius: 3%;
-  width: 33.33%;
+  width: 380px;
   height: 42vh;
 }
 
@@ -93,7 +92,7 @@ section {
   overflow: auto;
   width: 100%;    
   background-color: #E2D6B8;
-  padding: 5% 0%;
+  /* padding: 5% 0%; */
 }
 
 /* Top card styling */
@@ -198,6 +197,10 @@ a{
 }
 
 /* Project Card Styling */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
 .projectTitle {
   width: 100%;
   font-size: 1.5rem;
@@ -306,12 +309,4 @@ a {
 .row2 {
   width:45%;
   margin: 3% auto;
-}
-
-
-/* Media Queries */
-@media screen and (max-width: 992px) {
-  .portfolio-item {
-    max-width: 33.33%;
-  }
 }
