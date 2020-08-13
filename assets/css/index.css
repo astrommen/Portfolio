@@ -25,12 +25,18 @@ body {
   text-decoration-color: #6B4917;
 }
 
+section {
+  margin: 2% 0;
+  display: grid;
+  align-items: center;
+}
+
 .portfolio-item {
   justify-content: left;
   display: flex;
   flex-direction: column;
   justify-content: space between;
-  margin: 2% 1%;
+  margin: 2% 1% 0;
   border: solid #6B4917 .5px;
   border-radius: 3%;
   width: 33.33%;
@@ -124,7 +130,7 @@ a{
   width:100%;
   /* background-color: #E2D6B8; */
   /* overflow: hidden; */
-  margin: auto;
+  /* margin: auto; */
 }
 
 .flex{
@@ -138,6 +144,7 @@ a{
   flex-direction: row;
   justify-content: space-around;
   width: 100%;
+  margin: 1% auto;
 }
 
 .splide {
@@ -166,6 +173,28 @@ a{
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
+}
+
+/* Skills Card Styling */
+.row-skill{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* width: 65%;  */
+  max-width: 950px; 
+}
+.skill {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2%;
+  /* align-items: center; */
+  /* text-align: center; */
+}
+
+.skill-logo {
+  width: 100%;
 }
 
 /* Project Card Styling */
@@ -214,7 +243,7 @@ a{
 
 /* Resume Card */
 .resume{
-  margin: 2% 0 0 0;
+  /* margin: 2% 0 0 0; */
   padding: 5%;
   background-color: #281B08;
   height: max-content;
@@ -247,10 +276,7 @@ a{
 .contact{
   text-align: center;
   text-decoration: none;
-  /* height: 350px; */
-  /* background-color: #6B4917; */
-  /* margin: -2.2% 0 0 0; */
-  padding: 17% 5%;
+  padding: 10% 5%;
   background-color: #E2D6B8;
   height: 40vh;
   display: grid;
@@ -266,14 +292,13 @@ a {
 .contact-card{
   background-color: #E2D6B8;
   height: max-content;
-  /* width: 90% */
 }
 
 .contact-info {
   width: 50%;
 }
 
-.contact-info > .row {
+.contact-info .row {
   margin: 3%;
   /* width:30%; */
 }
