@@ -74,3 +74,21 @@
 // // var secondarySlider = new Splide( '#secondary-slider' ).mount();
 // // var primarySlider = new Splide( '#primary-slider' );
 // // primaryslider.sync( secondarySlider ).mount();
+
+
+$(document).ready(function() {
+    $("a").on("click", function(event) {
+        console.log(this.hash);
+        if (this.hash !== "") {
+            event.preventDefault();
+    
+            var hash = this.hash;
+    
+            $("html, body").animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+                window.location.has = hash;
+            });
+        }
+    });
+});
