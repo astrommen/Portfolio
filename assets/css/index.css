@@ -54,9 +54,23 @@ section {
 .card-text {
   padding: 0 2.5% 0 4.5%;
 }
-/* Horizontal Scrolling */
 
-.left{
+.container {
+  scroll-snap-type: y mandatory;
+}
+
+.child {
+  scroll-snap-align: start;
+  /* margin-bottom: .5px; */
+	height: max-content;
+  /* overflow: auto; */
+  width: 100%;    
+  background-color: #E2D6B8;
+}
+  /* padding: 5% 0%; */
+
+/* Top card styling */
+.landing{
   background-image: url("../images/Paris_Philadelphia.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -69,33 +83,11 @@ section {
   background-position: center;
   width:100%;
   position: relative;
-}
-
-.flex-container{
   height: 100vh;
-  background-image: url("../images/Paris_Philadelphia.jpg");
+  /* background-image: url("../images/Paris_Philadelphia.jpg"); */
   min-height: 100%;
-
 }
 
-/* .flex-container.is-hidden {
-  transform: translateY(-400%);
-}
-
-.flex-container.is-visible {
-  transform: translateY(0);
-} */
-
-.viewport {
-  margin-bottom: .5px;
-	/* height: 900px; */
-  overflow: auto;
-  width: 100%;    
-  background-color: #E2D6B8;
-  /* padding: 5% 0%; */
-}
-
-/* Top card styling */
 .main {
   text-align: center;
   line-height: 1.5em;
@@ -125,14 +117,9 @@ a{
 
 /* Bottom Card Styling */
 
-.gallery{
-  width:100%;
-  /* background-color: #E2D6B8; */
-  /* overflow: hidden; */
-  /* margin: auto; */
-}
 
-.flex{
+
+.portfolio{
   display: flex;
   grid-column-gap: 15px 0px;
   flex-direction: column;
@@ -144,10 +131,6 @@ a{
   justify-content: space-around;
   width: 100%;
   margin: 1% auto;
-}
-
-.splide {
-  visibility: visible;
 }
 
 .pic {
@@ -176,8 +159,10 @@ a{
 
 /* Skills Card Styling */
 .skills {
-  margin-top: 7%;
+  /* margin-top: 7%; */
+  padding-top: 5%;
 }
+
 .row-skill{
   display: flex;
   flex-wrap: wrap;
@@ -291,6 +276,7 @@ a{
   background-image: url("../images/septa_skyline.jpeg");
   background-attachment: fixed;
   background-size: cover;
+  height: max-content;
 }
 
 .contact-info > .row > a {
@@ -304,10 +290,10 @@ a {
 
 }
 
-.contact-card{
-  /* background-color: #E2D6B8; */
+/* .contact-card{
+  background-color: #E2D6B8;
   height: max-content;
-}
+} */
 
 .contact-info {
   width: 100%;

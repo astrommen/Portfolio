@@ -15,53 +15,53 @@
   </head>
   
   <body>
+    <div class="container">
+      <!-- Landing Page -->
+      <section class="child viewport landing" id="landing">
+        <div class="caption">
+          <div id="logo">
+            <img src="./assets/images/Drawing.png" alt="Aja's logo" id="portrait">
+          </div>
+          
+          <div class="main"> 
+            <!--bio of me-->
+            Hi! I'm a web developer based in Philadelphia. <br>
+            I love taking a journey into the rabbit hole <br>
+            and making order out of chaos. <br>
+            Scroll down to see some of my work below.
+          </div>
 
-    <!-- Landing Page -->
-    <section class="flex-container left card" id="landing">
-      <div class="caption">
-        <div id="logo">
-          <img src="./assets/images/Drawing.png" alt="Aja's logo" id="portrait">
+          <div class="links">
+            <a href="https://www.linkedin.com/in/aja-strommen-66a937187/" class="hvr-grow">
+              <img src="./assets/images/linkedin.png" alt="LinkedIn logo">
+            </a>
+            <a href="https://github.com/astrommen" class="hvr-grow">
+              <img src="./assets/images/github.png" alt="Github logo">
+            </a>
+            <!-- <a href="https://codepen.io/astrommen" class="hvr-grow">
+              <img src="./assets/images/codepen.png" alt="Codepen logo">
+            </a> -->
+            <a href="#skills" class="hvr-grow">
+              <img src="./assets/images/see-skills.png" alt="Skills Icon">
+            </a>
+            <a href="#portfolio" class="hvr-grow">
+              <img src="./assets/images/see-portfolio.png" alt="Portfolio Icon">
+            </a>
+            <a href="#resume" class="hvr-grow">
+              <img src="./assets/images/see-resume.png" alt="Resume Icon">
+            </a>
+            <a href="#contact1" class="hvr-grow" id="contactMe">
+              <img src="./assets/images/contactus.png" alt="Contact Icon">
+            </a>
+          </div> 
         </div>
-        
-        <div class="main"> 
-          <!--bio of me-->
-          Hi! I'm a web developer based in Philadelphia. <br>
-          I love taking a journey into the rabbit hole <br>
-          and making order out of chaos. <br>
-          Scroll down to see some of my work below.
-        </div>
-
-        <div class="links">
-          <a href="https://www.linkedin.com/in/aja-strommen-66a937187/" class="hvr-grow">
-            <img src="./assets/images/linkedin.png" alt="LinkedIn logo">
-          </a>
-          <a href="https://github.com/astrommen" class="hvr-grow">
-            <img src="./assets/images/github.png" alt="Github logo">
-          </a>
-          <!-- <a href="https://codepen.io/astrommen" class="hvr-grow">
-            <img src="./assets/images/codepen.png" alt="Codepen logo">
-          </a> -->
-          <a href="#skills" class="hvr-grow">
-            <img src="./assets/images/see-skills.png" alt="Skills Icon">
-          </a>
-          <a href="#portfolio" class="hvr-grow">
-            <img src="./assets/images/see-portfolio.png" alt="Portfolio Icon">
-          </a>
-          <a href="#resume" class="hvr-grow">
-            <img src="./assets/images/see-resume.png" alt="Resume Icon">
-          </a>
-          <a href="#contact1" class="hvr-grow" id="contactMe">
-            <img src="./assets/images/contactus.png" alt="Contact Icon">
-          </a>
-        </div> 
-      </div>
-    </section> 
+      </section> 
     <!-- End of Landing Page -->
           
-    <div class="viewport right card">
+    <!-- <div class="container  right card"> -->
 
       <!-- Skills Page -->
-      <section class="skills " id="skills">
+      <section class="child viewport skills" id="skills">
         <div class="row">
           <div class="title">Skills</div>
         </div>
@@ -125,7 +125,7 @@
       </section>
 
       <!-- Portfolio Page -->
-      <section class="gallery horizontal-object flex" id="portfolio">
+      <section class="child viewport portfolio" id="portfolio">
         <div class="row">
           <div class="title">Projects</div>
         </div>
@@ -209,7 +209,7 @@
       </section>
 
       <!-- Resume "Page" -->
-      <section class="container resume" id="resume">
+      <section class="child viewport resume" id="resume">
         <div class="row">
           <div class="title">View My Resume!</div>
         </div>
@@ -222,7 +222,7 @@
       </section> 
 
       <!-- Contact Me "Page" -->
-      <section class="container contact contact-card" id="contact1">
+      <section class="child viewport contact contact-card" id="contact1">
         <div class="row">
           <div class="title">Let's Get In Touch!</div>
         </div>
@@ -258,7 +258,7 @@
           
       </section>
   
-      </div>
+    </div>
 
     <script src="./assets/js/index.js"></script>
   </body>
